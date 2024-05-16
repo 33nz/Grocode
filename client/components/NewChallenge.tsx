@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import Challenge from '../../models/challenge'
 
-function postChallenge(c) {
+function postChallenge(c: Challenge) {
   fetch('http://localhost:8000/challenges', {
     method: 'POST',
     headers: { 'Content-type': 'application/json' },
@@ -17,7 +18,7 @@ const NewChallenge = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault()
-      const newChallenge = { challenge, dueDate, completed: 'no' }
+      const newChallenge: Challenge = { challenge, dueDate, completed: 'no' }
       postChallenge(newChallenge)
       console.log(newChallenge)
     } catch (err: any) {
@@ -38,7 +39,13 @@ const NewChallenge = () => {
         />
         <select value={dueDate} onChange={(e) => setDueDate(e.target.value)}>
           <option>Pick a due date</option>
-          <option>Tomorrow</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
         </select>
       </form>
     </div>
