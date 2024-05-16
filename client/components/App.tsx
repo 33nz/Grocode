@@ -1,4 +1,5 @@
 import NewChallenge from './NewChallenge'
+import OngoingChallenge from './OngoingChallenge'
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <h1>App</h1>
       <p>React development has begun!</p>
       <NewChallenge />
+      <OngoingChallenge />
     </div>
   )
 }
