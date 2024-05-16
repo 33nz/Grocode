@@ -1,9 +1,17 @@
+import OngoingChallenge from './OngoingChallenge'
+
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-      <p>React development has begun!</p>
-    </div>
+    <>
+      <div className="App-background">
+        <div className="hero is-fullheight has-background-primary-00">
+          <div className="hero-body">
+            <div className="container"></div>
+          </div>
+        </div>
+      </div>
+      <OngoingChallenge />
+    </>
   )
 }
 
