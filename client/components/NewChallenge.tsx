@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Challenge from '../../models/challenge'
 
+//post a challenge by writing it to the JSON file of challenges
 function postChallenge(c: Challenge) {
   fetch('http://localhost:8000/challenges', {
     method: 'POST',
