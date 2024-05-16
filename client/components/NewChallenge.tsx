@@ -17,7 +17,7 @@ const NewChallenge = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault()
-      const newChallenge = { challenge, dueDate }
+      const newChallenge = { challenge, dueDate, completed: 'no' }
       postChallenge(newChallenge)
       console.log(newChallenge)
     } catch (err: any) {

@@ -11,6 +11,12 @@
       "dueDate": "Daily",
       "completed": "no",
       "id": "4546"
+    },
+    {
+      "id": "83dc",
+      "challenge": "new challenge",
+      "dueDate": "Tomorrow",
+      "completed": "no"
     }
   ]
 }
