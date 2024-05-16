@@ -1,0 +1,16 @@
+{
+  "challenges": [
+    {
+      "challenge": "Quit drinking",
+      "dueDate": "Friday",
+      "completed": "yes",
+      "id": "2698"
+    },
+    {
+      "challenge": "Play guitar every day",
+      "dueDate": "Daily",
+      "completed": "no",
+      "id": "4546"
+    }
+  ]
+}

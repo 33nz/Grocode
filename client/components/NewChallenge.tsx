@@ -1,5 +1,13 @@
 import React, { useState } from 'react'
 
+function postChallenge(c) {
+  fetch('http://localhost:8000/challenges', {
+    method: 'POST',
+    headers: { 'Content-type': 'application/json' },
+    body: JSON.stringify(c),
+  })
+}
+
 const NewChallenge = () => {
   //useState for challenge description and dueDate
   const [challenge, setChallenge] = useState('')
@@ -9,7 +17,9 @@ const NewChallenge = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault()
-      console.log('submitted')
+      const newChallenge = { challenge, dueDate }
+      postChallenge(newChallenge)
+      console.log(newChallenge)
     } catch (err: any) {
       console.error(err)
     }
