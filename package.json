@@ -21,6 +21,7 @@
   "author": "Dev Academy Aotearoa",
   "license": "ISC",
   "dependencies": {
+    "@react-oauth/google": "^0.12.1",
     "superagent": "^8.1.2"
   },
   "devDependencies": {

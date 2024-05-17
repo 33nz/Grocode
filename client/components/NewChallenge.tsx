@@ -30,25 +30,34 @@ const NewChallenge = () => {
   //challenge and duedate as input fields
   return (
     <div>
-      <h2>In this challenge...</h2>
-      <form onSubmit={onSubmit}>
-        <input
-          type="text"
-          required
-          value={challenge}
-          onChange={(e) => setChallenge(e.target.value)}
-        />
-        <select value={dueDate} onChange={(e) => setDueDate(e.target.value)}>
-          <option>Pick a due date</option>
-          <option>Monday</option>
-          <option>Tuesday</option>
-          <option>Wednesday</option>
-          <option>Thursday</option>
-          <option>Friday</option>
-          <option>Saturday</option>
-          <option>Sunday</option>
-        </select>
-      </form>
+      <div className="container is-max-desktop mt-6 mb-6">
+        <div className="field">
+          <label className="label has-text-white">In this challenge...</label>
+          <div className="control">
+            <form onSubmit={onSubmit}>
+              <input
+                type="text"
+                required
+                value={challenge}
+                onChange={(e) => setChallenge(e.target.value)}
+              />
+              <select
+                value={dueDate}
+                onChange={(e) => setDueDate(e.target.value)}
+              >
+                <option>Pick a due date</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

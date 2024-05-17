@@ -1,9 +1,9 @@
 function OngoingChallenge() {
   return (
-    <div className="container is-max-desktop">
+    <div className="container is-max-desktop mb-6">
       <div className="columns">
         <div className="column is-one-third-desktop is-half-tablet is-full-mobile">
-          <h1 className="is-size-4 has-text-white has-text-weight-semibold">
+          <h1 className="is-size-4 has-text-white has-text-weight-medium">
             Challenge input goes here
           </h1>
         </div>
