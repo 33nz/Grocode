@@ -1,6 +1,26 @@
 @import 'https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css';
 
+.logo {
+  width: 200px;
+}
+
+.navbar-item,
+.navbar-link,
+.navbar-dropdown {
+  color: white;
+}
+
+.navbar-item {
+  margin-left: 10px;
+}
+
 body {
-  background-color: #06021c; /* Set background color to black */
-  color: #fff; /* Set text color to white */
+  margin-left: 20px;
+  margin-top: 20px;
+  background: #06021c;
+  color: #fff;
+}
+
+header {
+  background-color: #141032;
 }

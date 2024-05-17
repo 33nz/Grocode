@@ -1,11 +1,11 @@
 import NewChallenge from './NewChallenge'
 import OngoingChallenge from './OngoingChallenge'
+import PageHeader from './PageHeader'
 
 function App() {
   return (
     <div>
-      <h1>App</h1>
-      <p>React development has begun!</p>
+      <PageHeader />
       <NewChallenge />
       <OngoingChallenge />
     </div>
