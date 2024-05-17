@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function PageHeader() {
   return (
@@ -28,17 +29,25 @@ function PageHeader() {
 
           <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-start">
-              <a className="navbar-item">Home</a>
+              <a className="navbar-item">
+                <Link to="/about">About</Link>
+              </a>
 
-              <a className="navbar-item">About</a>
+              <a className="navbar-item">
+                <Link to="/contact">Contact</Link>
+              </a>
 
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">Grospiration</a>
 
                 <div className="navbar-dropdown">
-                  <a className="navbar-item">Challenge Ideas</a>
-                  <a className="navbar-item is-selected">Success Stories</a>
-                  <a className="navbar-item">Contact</a>
+                  <a className="navbar-item">
+                    <Link to="/ideas">Challenge Ideas</Link>
+                  </a>
+                  <a className="navbar-item is-selected">
+                    <Link to="/inspiration">Success Stories</Link>
+                  </a>
+
                   <hr className="navbar-divider" />
                 </div>
               </div>
