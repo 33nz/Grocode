@@ -6,15 +6,17 @@ const Dashboard = () => {
 
   useEffect(() => {
     const accessToken = sessionStorage.getItem('access_token')
-    const apikey = 'AIzaSyA8tq1zv3fFwj1LCiJY2lZFFT5eBb8F2so'
     if (accessToken) {
-      fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events', {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-          'Content-Type': 'application/json',
-        },
-      })
+      fetch(
+        'https://www.googleapis.com/calendar/v3/calendars/primary/events/eventId',
+        {
+          method: 'GET',
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            'Content-Type': 'application/json',
+          },
+        }
+      )
         .then((response) => response.json())
         .then((data) => setEvents(data.items))
     }
