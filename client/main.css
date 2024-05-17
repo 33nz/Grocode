@@ -33,6 +33,6 @@ header {
 
 hr {
   border: none;
-  height: 0.2px;
-  border-color: rgba(255, 255, 255, 0.3);
+  height: 0.1px;
+  border-color: rgba(255, 255, 255, 0.2);
 }
